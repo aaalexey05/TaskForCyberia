@@ -1,0 +1,45 @@
+/* Стили для хлебных крошек */
+.breadcrumb {
+  padding: 0 20px;
+}
+
+/* Стили для ссылок в хлебных крошках */
+.breadcrumb__links {
+  margin-top: 20px; /* Отступ сверху */
+  margin-left: 20px; /* Отступ слева */
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+}
+
+.main-link{
+  color: #9AA8BA;
+}
+
+.after_main-link {
+  color: #C4D2E3;
+}
+
+.breadcrumb__link {
+  color: #EEF3FF; /* Цвет ссылки */
+  text-decoration: none;
+}
+
+.breadcrumb__link:hover {
+  color: #1890ff; /* Цвет при наведении */
+}
+
+/* Стили для текста текущей страницы */
+.breadcrumb__current {
+  margin-top: 60px; /* Отступ сверху для основного текста */
+  margin-left: 20px; /* Отступ слева для основного текста */
+  font-size: 24px;
+  color: #EEF3FF;
+  font-weight: 600;
+  font-size: 48px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  line-height: 57.6px;
+  letter-spacing: 0%;
+}

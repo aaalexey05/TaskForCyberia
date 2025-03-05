@@ -1,0 +1,169 @@
+/* Стили для CasesPage */
+.cases-page {
+    padding: 20px;
+  }
+  
+  /* Контейнер для загрузки данных */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Высота контейнера, чтобы он занимал большую часть экрана */
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Белая обводка */
+    border-top: 4px solid #1890ff; /* Синий цвет для верхней части */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Анимация вращения */
+    margin-bottom: 20px; /* Отступ снизу */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Контейнер для категорий */
+  .categories-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    flex-wrap: wrap; /* Разрешаем перенос элементов, если не хватает места */
+    gap: 20px; /* Отступы между элементами */
+    width: 100%; /* Занимаем всю ширину */
+  }
+  
+  /* Стили для элементов категорий */
+  .category-item {
+    background-color: #313341;
+    color: #EEF3FF;
+    padding: 10px 20px; /* Добавим паддинги для отступов вокруг текста */
+    height: auto; /* Убираем фиксированную высоту */
+    min-width: 150px; /* Минимальная ширина для удобства */
+    max-width: 300px; /* Ограничиваем максимальную ширину */
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s ease; /* Плавное увеличение при наведении */
+    width: 22%; /* Каждый элемент будет занимать 22% ширины родительского контейнера */
+    box-sizing: border-box; /* Учитываем паддинги при расчете ширины */
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05); /* Увеличиваем элемент при наведении */
+  }
+  
+  .category-item h3 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin: 0;
+    letter-spacing: 0%; /* Убираем межбуквенные интервалы */
+  }
+
+/* Стили для активного элемента */
+.category-item.active {
+    background-color: #1890ff; /* Синий фон для активной категории */
+    color: #fff; /* Белый цвет текста для активного элемента */
+    transform: scale(1.05); /* Плавное увеличение активного элемента */
+  }
+  
+  /* Стили для обычных элементов */
+  .category-item {
+    background-color: #313341;
+    color: #EEF3FF;
+    padding: 10px 20px;
+    min-width: 150px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s ease; /* Плавное увеличение при наведении */
+    width: 22%; /* Каждый элемент будет занимать 22% ширины родительского контейнера */
+    box-sizing: border-box;
+  }
+
+  /* Мобильная версия */
+@media (max-width: 768px) {
+
+    /* Основной контейнер страницы */
+    .cases-page {
+      padding: 10px; /* Уменьшаем отступы */
+    }
+  
+    /* Контейнер для загрузки данных */
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50vh; /* Высота контейнера, чтобы он занимал большую часть экрана */
+    }
+  
+    .loading-spinner {
+      border: 4px solid rgba(255, 255, 255, 0.3); /* Белая обводка */
+      border-top: 4px solid #1890ff; /* Синий цвет для верхней части */
+      border-radius: 50%;
+      width: 40px; /* Меньший размер для мобильных устройств */
+      height: 40px;
+      animation: spin 1s linear infinite; /* Анимация вращения */
+      margin-bottom: 15px; /* Отступ снизу */
+    }
+  
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 28px; /* Уменьшаем размер заголовка */
+      margin-bottom: 15px;
+    }
+  
+    /* Контейнер для категорий */
+    .categories-container {
+      display: flex;
+      justify-content: space-between; /* Равномерное распределение элементов */
+      flex-wrap: wrap; /* Разрешаем перенос элементов, если не хватает места */
+      gap: 15px; /* Отступы между элементами */
+      width: 100%; /* Занимаем всю ширину */
+    }
+  
+    /* Стили для элементов категорий */
+    .category-item {
+      background-color: #313341;
+      color: #EEF3FF;
+      padding: 10px 15px; /* Добавим паддинги для отступов вокруг текста */
+      min-width: 130px; /* Минимальная ширина для удобства */
+      max-width: 260px; /* Ограничиваем максимальную ширину */
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.2s ease; /* Плавное увеличение при наведении */
+      width: 45%; /* Занимаем 45% ширины экрана для мобильных */
+      box-sizing: border-box; /* Учитываем паддинги при расчете ширины */
+    }
+  
+    .category-item:hover {
+      transform: scale(1.05); /* Увеличиваем элемент при наведении */
+    }
+  
+    .category-item h3 {
+      font-family: 'Fira Sans Condensed', sans-serif;
+      font-weight: 400;
+      font-size: 20px; /* Уменьшаем размер текста для мобильных */
+      line-height: 28.8px;
+      margin: 0;
+      letter-spacing: 0%; /* Убираем межбуквенные интервалы */
+    }
+  }
+  
+

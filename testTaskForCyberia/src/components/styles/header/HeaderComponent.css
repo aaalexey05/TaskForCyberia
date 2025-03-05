@@ -1,0 +1,29 @@
+/* Общие стили для хедера */
+.header {
+  background-color: transparent;  /* Прозрачный фон для хедера */
+  font-weight: 400;
+  padding-top: 16px;  /* Убираем отступ сверху */
+  height: 100px; /* Высота хедера */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень для хедера */
+  background-color: #24252F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Контейнер для содержимого хедера (логотип и меню) */
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px; /* Ограничиваем максимальную ширину для десктопа */
+  margin: 0 auto; /* Центрируем содержимое */
+}
+
+/* Логотип */
+.header__logo-img {
+  width: 131px;  /* Размер логотипа для десктопов */
+  height: 28px;
+}

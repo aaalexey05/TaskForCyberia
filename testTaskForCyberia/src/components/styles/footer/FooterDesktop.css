@@ -1,0 +1,111 @@
+/* Общие стили для футера */
+html, body {
+    height: 100%; /* Устанавливаем высоту для body и html на 100% */
+    margin: 0; /* Убираем отступы по умолчанию */
+    display: flex;
+    flex-direction: column; /* Страница будет растягиваться по вертикали */
+}
+
+.app-container {
+    flex: 1; /* Главный контент займет оставшееся пространство */
+    display: flex;
+    flex-direction: column; /* Все элементы внутри идут вертикально */
+    height: 100vh;
+}
+
+/* Общие стили футера для десктопа */
+.footer {
+    background-color: #313341; /* Темный фон футера */
+    color: #EEF3FF; /* Цвет текста */
+    width: 100%; /* Футер растягивается на всю ширину */
+    position: relative; /* Позиционирование футера */
+    margin-top: auto; /* Убедимся, что футер всегда снизу */
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень сверху футера */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое футера по горизонтали */
+    align-items: center; /* Центрируем содержимое футера по вертикали */
+}
+
+/* Контейнер для содержимого футера */
+.footer__content {
+    display: flex;
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    max-width: 1400px;
+    width: 80%;
+}
+
+.footer__logo-img {
+    width: 196px;
+    height: 41.28px;
+}
+
+.footer_description-text {
+    color: #FFFFFF;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 196px;
+    word-wrap: break-word; /* Перенос текста */
+}
+
+/* Контактная информация */
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравниваем элементы по центру по вертикали */
+    align-items: flex-end; /* Выравнивание по правому краю */
+}
+
+.footer__contacts {
+    padding-top: 30px;
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+/* Контактная информация */
+.footer__contacts p {
+    margin: 5px 0;
+}
+
+/* Ссылки футера */
+.footer__links {
+    display: flex;
+    justify-content: flex-end; /* Выравниваем ссылки по правому краю */
+    width: 100%;
+    flex-wrap: wrap; /* Разрешаем перенос элементов на разные строки */
+}
+
+/* Стили для левой и правой колонок */
+.footer__links-left,
+.footer__links-right {
+    display: flex;
+    flex-direction: column; /* Размещение элементов в колонку */
+}
+
+.footer__links-left {
+    flex: 1; /* Занимает оставшееся место */
+}
+
+.footer__links-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/* Стили для ссылок */
+.footer__links a {
+    color: #EEF3FF;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.footer__links a:hover {
+    color: #1890ff; /* Цвет при наведении */
+}
+
+/* Добавляем отступ между контактной информацией и меню */
+.footer__contacts p {
+    margin-bottom: 20px; /* Отступ между контактами и ссылками */
+}

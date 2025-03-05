@@ -1,0 +1,264 @@
+/* Основные стили для формы */
+.form-container {
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.project-request-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+    color: #EFF3FF;
+}
+
+/* Стили для меток */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+    color: #EFF3FF;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: Fira Sans Condensed, 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+    line-height: 21.6px;
+}
+
+/* При фокусе на поле */
+input[type="text"]:focus + label,
+input[type="email"]:focus + label,
+input[type="tel"]:focus + label,
+textarea:focus + label {
+    top: -9px;
+    font-size: 20px;
+    color: #EFF3FF;
+}
+
+/* Поля ввода */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #EEF3FF;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+textarea {
+    resize: none; /* Убираем возможность изменять размер textarea */
+    height: 120px;
+    padding-top: 30px;
+}
+
+/* Кнопка */
+button.submit-btn {
+    background-color: #2D76F9;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: Fira Sans Condensed, 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-top: 50px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button.submit-btn:hover {
+    background-color: #1a5dc9;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Стили для десктопа */
+@media (min-width: 769px) {
+    .project-request-form {
+        flex-direction: column;
+    }
+
+    /* Стили для чекбокса и текста */
+    .form-group_checkbox {
+        display: flex;
+        align-items: center;
+        color: #EFF3FF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21.6px;
+        font-family: 'Fira Sans Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .form-group_checkbox label {
+        font-size: 14px;
+        color: #aaa;
+        margin-left: 10px;
+    }
+
+    .form-group_checkbox input {
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        color: #EFF3FF;
+    }
+
+    /* Скрываем текст на десктопах */
+    .consent-text {
+        display: none;
+    }
+
+    /* Группируем поля на десктопах (3 поля в ряд) */
+    .form-group-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;  /* Пространство между полями */
+        margin-top: 50px;
+    }
+
+    .form-group-group .form-group {
+        flex: 1;  /* Каждое поле занимает равное место */
+    }
+
+    /* Кнопка */
+    button.submit-btn {
+        max-width: 200px;
+        margin: 20px auto 0;
+        border-radius: 85px;
+    }
+
+        /* Основной стиль для заголовка */
+    h1 {
+        color: #EFF3FF;
+        font-family: Rubik, 'Rubik', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.44px;
+        letter-spacing: 0%;
+        text-align: left;
+        display: flex;  /* Для размещения текста и изображения рядом */
+        align-items: center;  /* Вертикальное выравнивание текста и изображения */
+    }
+    
+    /* Стили для изображения внутри h1 */
+    .h1-image {
+        display: none;  /* Скрываем на десктопах */
+    }
+
+    h1 br {
+        margin-bottom: 10px; /* Добавляем отступ между строками */
+    }
+
+    button.submit-btn::after {
+        content: 'Обсудить проект';  /* Меняем текст кнопки */
+    }
+}
+
+
+/* Стили для мобильных */
+@media (max-width: 768px) {
+    button.submit-btn::after {
+        content: 'ОТПРАВИТЬ';  /* Меняем текст кнопки */
+        font-weight: 400;
+        font-size: 13px;
+        font-family: Open Sans, 'Open Sans', Arial, Helvetica, sans-serif;
+    }
+
+    .project-request-form {
+        flex-direction: column;
+    }
+
+    .form-group_checkbox {
+        display: none;  /* Скрываем чекбокс */
+    }
+
+    .consent-text {
+        font-family: Open Sans, 'Open Sans', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: #EEF3FF;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    button.submit-btn {
+        margin-top: 0px;
+        background-color: #2D76F9;
+        border-radius: 85px;
+    }
+
+    h1 {
+        color: #EFF3FF;
+        font-family: Rubik, 'Rubik', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.44px;
+        letter-spacing: 0%;
+        text-align: left;
+        display: flex;  /* Для размещения текста и изображения рядом */
+        align-items: center;  /* Вертикальное выравнивание текста и изображения */
+        justify-content: flex-start;  /* Размещение элементов по левому краю */
+        gap: 16px;  /* Добавляем отступ между картинкой и текстом */
+        flex-direction: row;  /* Горизонтальное расположение элементов */
+        margin-left: 100px;
+    }
+    
+    .h1-image {
+        display: inline-block;  /* Показываем картинку только на мобильных */
+        width: 76px;  /* Размеры картинки */
+        height: 70.15px;
+        order: -1;  /* Сдвигаем картинку влево */
+        margin-top: -120px;
+    }
+
+    /* Поля ввода */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+        border: 1px solid #EEF3FF;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        position: relative;
+    }
+
+        /* При фокусе на поле */
+    input[type="text"]:focus + label,
+    input[type="email"]:focus + label,
+    input[type="tel"]:focus + label,
+    textarea:focus + label {
+        left: -1px;
+        top: -8px;
+        font-size: 20px;
+        color: #EEF3FF;
+    }
+}
