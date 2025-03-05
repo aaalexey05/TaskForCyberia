@@ -23,6 +23,7 @@ testTaskForCyberia/
 ├── package-lock.json           # Лок файл для зависимостей
 ├── package.json                # Метаданные проекта и зависимости
 ├── README.md                   # Документация проекта
+```
 
 ## Требования
 
@@ -51,11 +52,7 @@ npm install
 ### 3. Запуск сервера разработки
 После установки зависимостей запустите проект с помощью сервера разработки Vite:
 npm run dev
-
-
-
-
-
+```
 
 ## Пример использования
 
@@ -77,7 +74,7 @@ npm run dev
 
 ```javascript
 const apiUrl = "https://api.test.cyberia.studio/api/v1";
-
+```
 
 ## Контрибьютинг
 
