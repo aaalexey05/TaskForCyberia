@@ -92,7 +92,7 @@ const apiUrl = "https://api.test.cyberia.studio/api/v1";
 
 ## Авторы и благодарности
 
-- **Имя автора 1**: aaalexey05
+- **Имя автора**: aaalexey05
 
 Благодарности:
 
