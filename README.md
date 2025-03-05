@@ -44,13 +44,17 @@ testTaskForCyberia/
 ```bash
 git clone https://github.com/your-username/testTaskForCyberia.git
 cd testTaskForCyberia
+```
 
 ### 2. Установка зависимостей
 Запустите следующую команду, чтобы установить все зависимости проекта:
+```bash
 npm install
+```
 
 ### 3. Запуск сервера разработки
 После установки зависимостей запустите проект с помощью сервера разработки Vite:
+```bash
 npm run dev
 ```
 
@@ -84,7 +88,6 @@ const apiUrl = "https://api.test.cyberia.studio/api/v1";
 2. Создайте новую ветку для вашей функциональности (`git checkout -b feature/my-feature`).
 3. Внесите изменения и протестируйте их.
 4. Создайте Pull Request в основной репозиторий.
-
 
 
 ## Авторы и благодарности
