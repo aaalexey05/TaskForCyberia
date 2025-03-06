@@ -42,7 +42,7 @@ testTaskForCyberia/
 Клонируйте этот репозиторий на ваш локальный компьютер:
 
 ```bash
-git clone https://github.com/your-username/testTaskForCyberia.git
+git clone https://github.com/aaalexey05/testTaskForCyberia.git
 cd testTaskForCyberia
 ```
 
